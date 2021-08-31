@@ -22,16 +22,14 @@ jobs:
     steps:
       - name: Commit identity theft
         run: |
-          git config -g user.name CommandGeek
-          git config -g user.email nathan.kulzer@protonmail.com
+          git config --global user.name CommandGeek
+          git config --global user.email nathan.kulzer@protonmail.com
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Download the internet
+        uses: actions/checkout@v2
       
       - name: Make a branch for the box
         run: git branch -f pack main
-      
-      - name: Put the box on the branch
-        run: git 
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
       - name: Delete existing data
