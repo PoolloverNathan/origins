@@ -42,7 +42,7 @@ jobs:
           echo '\",\"color\":\"light_purple\"}}}' >> pack.mcmeta
         
       - name: Put the things in the place
-        run: git add -a
+        run: git add -A
       
       - name: Put the place in the box
         run: git commit -m "Build datapack"
