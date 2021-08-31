@@ -38,11 +38,21 @@ jobs:
       - name: Delete existing data
         run: rm -rf data pack.mcmeta
       
-      - name: Create pack.mcmeta
+      - name: Make a folder for folding
         run: |
-          echo -n '{"pack":{"pack_version":7,"description":"{\"text\":\"' > pack.mcmeta
-          echo -n "$(cat .github/description)" >> pack.mcmeta
-          echo '\",\"color\":\"light_purple\"}}}' >> pack.mcmeta
+          rm -rf out
+          mkdir -p out/data
+      
+      - name: Make the metas
+        run: |
+          echo -n '{"pack":{"pack_version":7,"description":"{\"text\":\"' > out/pack.mcmeta
+          echo -n "$(cat .github/description)" >> out/pack.mcmeta
+          echo '\",\"color\":\"light_purple\"}}}' >> out/pack.mcmeta
+        
+      - name: Take the things out of the box
+        run: |
+          cp -r local out/data/poolorigins ||:
+          cp -r foregin/* out/data/ ||:
         
       - name: Put the things in the place
         run: git add -A
