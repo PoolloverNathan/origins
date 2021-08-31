@@ -41,7 +41,7 @@ jobs:
       - name: Create pack.mcmeta
         run: |
           echo '{"pack":{"pack_version":7,"description":"{\"text\":\"' -n > pack.mcmeta
-          echo "${cat .github/description}" -n >> pack.mcmeta
+          echo "$(cat .github/description)" -n >> pack.mcmeta
           echo '\",\"color\":\"light_purple\"}}}' >> pack.mcmeta
         
       - name: Put the things in the place
