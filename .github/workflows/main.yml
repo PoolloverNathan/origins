@@ -48,6 +48,6 @@ jobs:
         run: git commit -m "Build datapack"
         
       - name: Put the box on the internet
-        run: git push -fuorigin pack
+        run: git push -fu origin pack
       
       
