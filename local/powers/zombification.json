@@ -1,0 +1,13 @@
+{
+  "type": "origins:damage_over_time",
+  "damage": 1,
+  "interval": 100,
+  "name": "Zombifying",
+  "description": "Corruption gradually spreads throughout your body, dealing damage every 5 seconds."
+  "damage_source": {
+    "name": "poolorigins:zombification",
+    "bypasses_armor": true,
+    "unblockable": true,
+    "magic": true
+  }
+}
