@@ -30,6 +30,9 @@ jobs:
       
       - name: Make a branch for the box
         run: git branch -f pack main
+        
+      - name: Stare at the branch that is for the box
+        run: git checkout pack
 
       # Runs a single command using the runners shell
       - name: Delete existing data
