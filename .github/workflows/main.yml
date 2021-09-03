@@ -45,7 +45,7 @@ jobs:
       
       - name: Make the metas
         run: |
-          echo -n '{"pack":{"pack_version":7,"description":"{\"text\":\"' > out/pack.mcmeta
+          echo -n '{"pack":{"pack_format":7,"description":"{\"text\":\"' > out/pack.mcmeta
           echo -n "$(cat .github/description)" >> out/pack.mcmeta
           echo '\",\"color\":\"light_purple\"}"}}' >> out/pack.mcmeta
         
