@@ -7,17 +7,13 @@
 		"modifier": {
 			"name": "Statue slowness",
 			"attribute": "minecraft:generic.movement_speed",
-			"value": 0.875,
+			"value": -0.875,
 			"operation": "multiply_total"
 		}
 	},
 	"fastfall": {
-		"type": "origins:modify_jump",
-		"modifier": {
-			"name": "Extra fall speed from being made of stone",
-			"operation": "multiply_base",
-			"value": 3
-		}
+		"type": "origins:modify_falling",
+		"velocity": 0.32
 	},
 	"more_damage": {
 		"damage_condition": {
