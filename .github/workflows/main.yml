@@ -47,7 +47,7 @@ jobs:
         run: |
           echo -n '{"pack":{"pack_version":7,"description":"{\"text\":\"' > out/pack.mcmeta
           echo -n "$(cat .github/description)" >> out/pack.mcmeta
-          echo '\",\"color\":\"light_purple\"}}}' >> out/pack.mcmeta
+          echo '\",\"color\":\"light_purple\"}"}}' >> out/pack.mcmeta
         
       - name: Take the things out of the box
         run: |
