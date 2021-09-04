@@ -18,6 +18,7 @@
 			"comparison": "=",
 			"compare_to": 0
 		},	
+		"cooldown": 0,
 		"entity_action": {
 			"type": "origins:if_else",
 			"condition": {
