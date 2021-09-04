@@ -2,7 +2,7 @@
 	"name": "Stone Eater",
 	"description": "You can consume polished/smooth stones with G every 30 seconds to heal two hearts.",
 	"type": "origins:active_self",
-	"cooldown": 600,
+	"cooldown": 100,
 	"condition": {
 		"type": "origins:and",
 		"conditions": [
@@ -15,11 +15,16 @@
 						"tag": "poolorigins:statue_consumable"
 					}
 				}
+			},
+			{
+				"type": "origins:health",
+				"comparison": "<=",
+				"compare_to": 6
 			}
 		]	
 	},
 	"hud_render": {
-		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01",
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
 		"bar_index": 18
 	},
 	"entity_action": {
