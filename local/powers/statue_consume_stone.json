@@ -19,7 +19,7 @@
 		]	
 	},
 	"hud_render": {
-		"sprite_location": "textures/gui/community/huang/resource_bar_01",
+		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01",
 		"bar_index": 18
 	},
 	"entity_action": {
