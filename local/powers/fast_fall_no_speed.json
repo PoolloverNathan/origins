@@ -34,6 +34,9 @@
 			"operation": "multiply_base",
 			"value": 3
 		}
+	},
+	"ignore_water": {
+		"type": "origins:ignore_water"
 	}
 }
 
