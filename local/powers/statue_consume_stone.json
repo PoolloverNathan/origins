@@ -1,6 +1,6 @@
 {
 	"name": "Stone Eater",
-	"description": "You can consume polished/smooth stones with G every 30 seconds to heal two hearts.",
+	"description": "You can repair yourself polished/smooth stones with G every 5 seconds to heal two hearts.",
 	"type": "origins:active_self",
 	"cooldown": 100,
 	"condition": {
