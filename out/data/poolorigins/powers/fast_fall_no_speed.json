@@ -1,0 +1,42 @@
+{
+	"type": "origins:multiple",
+	"name": "Heavy",
+	"description": "Being made of stone, you move slowly, but fall four times faster (and take four times as much kinetic damage)",
+	"slow": {
+		"type": "origins:attribute",
+		"modifier": {
+			"name": "Statue slowness",
+			"attribute": "minecraft:generic.movement_speed",
+			"value": -0.875,
+			"operation": "multiply_total"
+		}
+	},
+	"fastfall": {
+		"type": "origins:modify_falling",
+		"velocity": 0.32
+	},
+	"more_damage": {
+		"damage_condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:name",
+					"name": "fall"
+				},
+				{
+					"type": "origins:name",
+					"name": "flyIntoWall"
+				}
+			]
+		},
+		"modifier": {
+			"name": "Extra kinetic damage from being made of stone",
+			"operation": "multiply_base",
+			"value": 3
+		}
+	},
+	"ignore_water": {
+		"type": "origins:ignore_water"
+	}
+}
+

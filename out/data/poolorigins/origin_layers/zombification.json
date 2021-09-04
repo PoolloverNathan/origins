@@ -1,0 +1,8 @@
+{
+  "default_origin": "origins:human",
+  "origins": [
+    "origins:human",
+    "poolorigins:zombifying",
+    "poolorigins:zombified"
+  ]
+}

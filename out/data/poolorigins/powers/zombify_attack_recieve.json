@@ -1,0 +1,25 @@
+{
+  "type": "target_action_on_hit",
+  "damage_condition": {
+    "type": "origins:name",
+    "name": "player"
+  },
+  "target_condition": {
+    "type": "origins:origin",
+    "origin": "origins:human",
+    "layer": "poolorgins:zombification"
+  },
+  "entity_action": {
+    "type": "and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "origin set @s poolorigins:zombification poolorigins:zombifying"
+      },
+      {
+        "type": "origins:play_sound",
+        "sound": "mob.zombie.infect"
+      }
+    ]
+  }
+} 
